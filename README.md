@@ -20,9 +20,28 @@
 - 使用模型：BGE-VL-base
 - 使用数据集：CIRCO-test
 - 检索办法：使用faiss索引faiss.IndexFlatL2
-- 实验运行命令：python /root/autodl-tmp/ITR_bge_l2/retrieval_CIRCO.py
-- 结果输出路径：/root/autodl-tmp/ITR_bge_l2/results/predictions.json
+- 实验运行命令：`python /root/autodl-tmp/ITR_bge/retrieval_CIRCO.py --method=“l2” --output_file=“/root/autodl-tmp/ITR_bge/results/predictions_test_bge_l2.json”`
+- 结果输出路径：/root/autodl-tmp/ITR_bge/results/predictions_test_bge_l2.json
 
 ### 输出结果
 
-/root/autodl-tmp/ITR_bge_l2/results/predictions.json
+Recall@5: 32.12
+Recall@10: 38.5
+Recall@25: 46.88
+Recall@50: 52.12
+
+mAP@5: 23.43
+mAP@10: 23.38
+mAP@25: 24.94
+==mAP@50: 25.5== < 34.3 (paper claimed)
+
+mAP@10 results for each semantic aspect:
+Cardinality: 20.62
+Addition: 24.57
+Negation: 24.2
+Direct Addressing: 23.96
+Compare & Change: 21.03
+Comparative Statement: 23.19
+Statement with Conjunction: 22.79
+Spatial Relations & Background: 25.36
+Viewpoint: 20.44
