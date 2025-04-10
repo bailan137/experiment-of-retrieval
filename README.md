@@ -12,3 +12,16 @@
 ## 输出结果
 - 将模型输出的log文件传入
 - 将模型输出的plt文件传入
+
+## 2025/4/10 BGE-VL-base+L2检索
+
+### 配置
+
+- 使用模型：BGE-VL-base
+- 使用数据集：CIRCO-test
+- 实验运行命令：python /root/autodl-tmp/ITR_bge_l2/retrieval_CIRCO.py
+- 结果输出路径：/root/autodl-tmp/ITR_bge_l2/results/predictions.json
+
+### 输出结果
+
+/root/autodl-tmp/ITR_bge_l2/results/predictions.json
