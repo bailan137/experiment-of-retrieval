@@ -19,6 +19,7 @@
 
 - 使用模型：BGE-VL-base
 - 使用数据集：CIRCO-test
+- 检索办法：使用faiss索引faiss.IndexFlatL2
 - 实验运行命令：python /root/autodl-tmp/ITR_bge_l2/retrieval_CIRCO.py
 - 结果输出路径：/root/autodl-tmp/ITR_bge_l2/results/predictions.json
 
