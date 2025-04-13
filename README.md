@@ -64,5 +64,5 @@ Viewpoint: 20.44
 
 ### 训练结果
 
-![Tn BGE-VL-base Text Model 5 epoch on flickr](attachments/Tn BGE-VL-base Text Model 5 epoch on flickr.png)
+详见 `/text_embedding/tn_bge_text_bitblas_flickr30k_5_epoch`目录
 
