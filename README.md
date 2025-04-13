@@ -1,5 +1,8 @@
 # experiment-of-retrieval
 此项目用于传输每次实验结果
+
+[toc]
+
 ## 配置
 - 使用模型：例如BGE
 - 使用压缩方法：例如三值化text-model
@@ -45,3 +48,21 @@ Comparative Statement: 23.19
 Statement with Conjunction: 22.79
 Spatial Relations & Background: 25.36
 Viewpoint: 20.44
+
+## 2025/4/13 Tn BGE-VL-base Text Model 在Flickr30k-train上训练5 epoch
+
+### 配置
+
+- 模型：BGE-VL-base
+- 压缩方法：三值化text-model
+- 数据集：Flickr30k-train
+- epoch：5
+- batch-size：16
+- 使用的学习率及调整算法：初始值2e-7，不调整
+- 实验运行命令：`python /root/autodl-tmp/nyh/tnClip/quantize_train_log_test.py`
+- 模型输出路径： `/root/autodl-tmp/models/tn_bge_text_bitblas_flickr30k_5_epoch` （最终模型) 和 `/root/autodl-tmp/models/tn_bge_text_bitblas_flickr30k` 训练过程中存储的模型。不知道有什么用
+
+### 训练结果
+
+![Tn BGE-VL-base Text Model 5 epoch on flickr](attachments/Tn BGE-VL-base Text Model 5 epoch on flickr.png)
+
