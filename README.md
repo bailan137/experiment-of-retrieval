@@ -68,3 +68,8 @@ Viewpoint: 20.44
 
 本日志：在 `/text_embedding/tn_bge_text_bitblas_flickr30k_33_epoch`
 
+收敛值：
+
++ train loss: 0.10253772529706137
++ test loss: 0.030368753243237734
+
