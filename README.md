@@ -49,20 +49,22 @@ Statement with Conjunction: 22.79
 Spatial Relations & Background: 25.36
 Viewpoint: 20.44
 
-## 2025/4/13 Tn BGE-VL-base Text Model 在Flickr30k-train上训练5 epoch
+## 2025/4/13 Tn BGE-VL-base Text Model 在Flickr30k-train上训练 33 epoch
 
 ### 配置
 
 - 模型：BGE-VL-base
 - 压缩方法：三值化text-model
 - 数据集：Flickr30k-train
-- epoch：5
-- batch-size：16
+- epoch：33
+- batch-size：16 (train) / 512 (test)
 - 使用的学习率及调整算法：初始值2e-7，不调整
 - 实验运行命令：`python /root/autodl-tmp/nyh/tnClip/quantize_train_log_test.py`
-- 模型输出路径： `/root/autodl-tmp/models/tn_bge_text_bitblas_flickr30k_5_epoch` （最终模型) 和 `/root/autodl-tmp/models/tn_bge_text_bitblas_flickr30k` 训练过程中存储的模型。不知道有什么用
+- 模型输出路径： `/root/autodl-tmp/models/tn_bge_text_bitblas_flickr30k_33_epoch` 
 
 ### 训练结果
 
-详见 `/text_embedding/tn_bge_text_bitblas_flickr30k_5_epoch`目录
+服务器：在 `/root/autodl-tmp/exp_data/tn_bge_text_flickr30k_33_epoch`
+
+本日志：在 `/text_embedding/tn_bge_text_bitblas_flickr30k_33_epoch`
 
